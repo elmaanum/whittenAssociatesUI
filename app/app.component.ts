@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 import {HomeComponent} from './routes/home/home.component';
+import {ProjectsComponent} from './routes/projects/projects.component';
 import {StateService} from './services/state.service';
 
 @Component({
@@ -13,7 +14,7 @@ import {StateService} from './services/state.service';
 @Routes([
   {path: '/',            component: HomeComponent },
   {path: '/home',        component: HomeComponent },
-  // {path: '/experiments', component: ExperimentsComponent },
+  {path: '/projects',    component: ProjectsComponent },
   {path: '/*',           component: HomeComponent }
 ])
 export class AppComponent {}

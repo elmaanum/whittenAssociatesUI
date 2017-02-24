@@ -1,17 +1,3 @@
-#header {
-  height: 175px;
-  background: black;
-  position: fixed;
-  header: 0;
-  left: 0;
-  width: 100%;
-}
-
-#header h1#logo {
-  float: left;
-  margin: 0;
-}
-
 #header h1#logo a {
   background: url(../images/WA_logo_text.gif) no-repeat top left;
   width: 194px;
@@ -19,10 +5,6 @@
   margin: 8px;
   display: block;
   text-indent: -9999px;
-}
-
-#header .router-link-active {
-  color: #C83434;
 }
 
 #header .color {
@@ -33,18 +15,41 @@
   width: 100%;
 }
 
-#header #menu {float:left;padding:17px 40px 0 0;}
-
-#container {padding:100px 20px 20px 20px;}
-
-.color {
-  background-color: goldenrod;
+#header {
+    margin-left: 100px;
 }
 
-.shadow {
-  background: url(../images/top-shadow.png) repeat-x;
-  height: 35px;
-  position: fixed;
-  top: 68px;
-  width: 100%;
+#mainNav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;   
+}
+
+.first, .next {
+   float: left;
+   padding: 10px;
+}
+
+.next {
+    padding: 10px;
+}
+
+#mainNav ul .router-link-active {
+  color: #C83434;
+}
+
+.navbg {
+    background: rgba(0, 0, 0, 0.5);
+    height: 43px;
+    position: absolute;
+    top: 98px;
+    width: 46%;
+    z-index: 100;
+    right: 0;
+}
+
+#footer {
+    margin-bottom: 100px;
 }

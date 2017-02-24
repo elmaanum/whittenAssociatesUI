@@ -1,18 +1,21 @@
 <header id="header">
+	<div class="navbg">		
+		<div id="mainNav" class="clearfix">
+			<ul>
+        <a class="first" [routerLink]="['/home']" >Home</a>
+        <a class="next" [routerLink]="['/about']" >Us</a>
+        <a class="next" [routerLink]="['/projects']" >Projects</a>
+        <a class="next" [routerLink]="['/contact']" >Contact</a>
+			</ul>
+    </div>
+  </div>
   <h1 id="logo">
     <a [routerLink]="['/Home']"></a>
   </h1>
-
-  <div id="menu">
-    <a [routerLink]="['/home']" class="btn">Home</a>
-  </div>
-
-  <div class="color"></div>
-  <div class="clear"></div>
+		<!--<a href="#slideNav" class="menuToggle"></a>-->
 </header>
+<div id="footer"></div>
 
-<div class="shadow"></div>
-
-<div id="container">
+<section>
   <router-outlet></router-outlet>
-</div>
+</section>
