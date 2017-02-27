@@ -4,19 +4,17 @@ import {DropBoxService} from '../../services/dropbox.service';
 
 @Component({
   selector: 'projects',
-  templateUrl: 'app/routes/projects/projects.component.html',
-  styleUrls: ['app/routes/projects/projects.component.css'],
-  providers: [DropBoxService, FlexDirective ,LayoutDirective]
+  template: require('./projects.component.html'),
+  providers: [DropBoxService,FlexDirective ,LayoutDirective]
 })
-export class ProjectsComponent {
-  
-  title: string = 'Projects';
+export class ProjectsComponent implements OnInit {
+  title: string = 'Projects Page';
   body:  string = 'This is the about projects body';
   message: string;
   dropboxes: string[];
 
   constructor(private _stateService: StateService, private _dropBoxService: DropBoxService) { }
-  
+
   ngOnInit() {
     this.message = this._stateService.getMessage();
     this._dropBoxService.getDropBox().then(result => {

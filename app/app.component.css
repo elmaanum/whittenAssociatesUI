@@ -1,3 +1,8 @@
+#header {
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
 #header h1#logo a {
   background: url(../images/WA_logo_text.gif) no-repeat top left;
   width: 194px;
@@ -15,8 +20,13 @@
   width: 100%;
 }
 
-#header {
-    margin-left: 100px;
+.first, .next {
+   float: left;
+   padding: 10px;
+}
+
+.next {
+    padding: 10px;
 }
 
 #mainNav ul a {
@@ -25,15 +35,6 @@
     font-size: 18px;
     font-weight: bold;
     margin-left: 30px;   
-}
-
-.first, .next {
-   float: left;
-   padding: 10px;
-}
-
-.next {
-    padding: 10px;
 }
 
 #mainNav ul .router-link-active {
@@ -52,4 +53,10 @@
 
 #footer {
     margin-bottom: 100px;
+}
+
+#section {
+    /*margin-top: 50px;*/
+    margin-left: 150px;
+    margin-right: 150px;
 }
