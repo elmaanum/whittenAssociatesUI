@@ -1,12 +1,19 @@
-<div id="header">
-  <h3>{{ title }}</h3>
-</div>
+<body>
+  <div class="content-wrapper">
+    <img src="../images/lumber.jpg">
+    <div class="text-wrapper">
+      <h1>{{ title }}</h1>
+    </div>
+  </div>  
+</body>
 
-<!--<div layout="row">
-  <div style="background-color:blue" flex="20">20%</div>
-  <div style="background-color:red" flex="50">50%</div>
-  <div style="background-color:green" flex="10">10%</div>
-</div>-->
-<div id="row">
-  <div style="padding: 5px" *ngFor="let dropbox of dropboxes" flex="20"><img width="300" height="240" src={{dropbox.imageUrl}}></div>
-</div>
+<main>
+  <div *ngFor="let dropbox of dropboxes" id="container">
+    <a href={{dropbox.imageUrl}} title={{dropbox.folderName}}>
+      <img src={{dropbox.imageUrl}}>
+      <div><p>{{dropbox.folderName}}</p></div>
+      
+    </a>
+  </div>
+</main>
+

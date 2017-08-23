@@ -7,9 +7,9 @@
   background: url(../images/WA_logo_text.gif) no-repeat top left;
   width: 194px;
   height: 200px;
-  margin: 8px;
+  /*margin: 8px;*/
   display: block;
-  text-indent: -9999px;
+  /*text-indent: -9999px;*/
 }
 
 #header .color {
@@ -49,14 +49,4 @@
     width: 46%;
     z-index: 100;
     right: 0;
-}
-
-#footer {
-    margin-bottom: 100px;
-}
-
-#section {
-    /*margin-top: 50px;*/
-    margin-left: 150px;
-    margin-right: 150px;
 }

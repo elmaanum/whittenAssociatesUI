@@ -11,17 +11,18 @@ import {DropBoxService} from '../../services/dropbox.service';
 export class ProjectsComponent {
   
   title: string = 'Projects';
-  body:  string = 'This is the about projects body';
+  body:  string = 'This is the projects body';
   message: string;
-  dropboxes: string[];
 
   constructor(private _stateService: StateService, private _dropBoxService: DropBoxService) { }
   
   ngOnInit() {
     this.message = this._stateService.getMessage();
-    this._dropBoxService.getDropBox().then(result => {
-        this.dropboxes = result;
-    });
+    this._dropBoxService.setThumbnails()
+  }
+
+  get dropboxes(){
+    return this._dropBoxService.getThumbnails()
   }
 
   updateMessage(m: string): void {

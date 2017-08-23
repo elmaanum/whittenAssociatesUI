@@ -9,7 +9,7 @@ function root(args) {
 module.exports = {
   devtool: 'source-map',
   debug: true,
-  entry: './app/boot.ts',
+  entry: './app/app.module.ts',
   resolve: {
     extensions: ['', '.ts', '.js']
   },

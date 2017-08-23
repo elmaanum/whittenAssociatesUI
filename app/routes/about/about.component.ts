@@ -17,9 +17,9 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.message = this._stateService.getMessage();
-    this._dropBoxService.getDropBox().then(result => {
-        this.dropboxes = result;
-    });
+    // this._dropBoxService.getDropBox().then(result => {
+    //     this.dropboxes = result;
+    // });
   }
 
   updateMessage(m: string): void {

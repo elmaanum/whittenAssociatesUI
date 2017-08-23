@@ -6,7 +6,7 @@ import {DropBoxService} from '../../services/dropbox.service';
   selector: 'home',
   template: require('./home.component.html'),
   providers: [DropBoxService,FlexDirective ,LayoutDirective]
-})
+}) 
 export class HomeComponent implements OnInit {
   title: string = 'Home Page';
   body:  string = 'This is the about home body';
@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.message = this._stateService.getMessage();
-    this._dropBoxService.getDropBox().then(result => {
-        this.dropboxes = result;
-    });
+    // this._dropBoxService.getDropBox().then(result => {
+    //     this.dropboxes = result;
+    // });
   }
 
   updateMessage(m: string): void {
